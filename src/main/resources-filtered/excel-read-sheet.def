@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition:ConnectorDefinition
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1">
+
+  <id>${excel-read-sheet.def.id}</id>
+  <version>${excel-read-sheet.def.version}</version>
+  <icon>excel.png</icon>
+  <category icon="excel.png" id="Microsoft Excel"/>
+
+  <!-- Inputs -->
+  <input name="document" type="org.bonitasoft.engine.bpm.document.Document" mandatory="true"/>
+  <input name="sheetName" type="java.lang.String" mandatory="false"/>
+  <input name="sheetIndex" type="java.lang.Integer" mandatory="false" defaultValue="0"/>
+  <input name="evaluateFormulas" type="java.lang.Boolean" mandatory="false" defaultValue="true"/>
+  <input name="includeHeaders" type="java.lang.Boolean" mandatory="false" defaultValue="true"/>
+
+  <!-- Outputs -->
+  <output name="success" type="java.lang.Boolean"/>
+  <output name="errorMessage" type="java.lang.String"/>
+  <output name="data" type="java.util.List"/>
+  <output name="rowCount" type="java.lang.Integer"/>
+
+  <!-- Pages -->
+  <page id="operationPage">
+    <widget xsi:type="definition:Text" id="documentWidget" inputName="document"/>
+    <widget xsi:type="definition:Text" id="sheetNameWidget" inputName="sheetName"/>
+    <widget xsi:type="definition:Text" id="sheetIndexWidget" inputName="sheetIndex"/>
+  </page>
+  <page id="advancedPage">
+    <widget xsi:type="definition:Checkbox" id="evaluateFormulasWidget" inputName="evaluateFormulas"/>
+    <widget xsi:type="definition:Checkbox" id="includeHeadersWidget" inputName="includeHeaders"/>
+  </page>
+</definition:ConnectorDefinition>

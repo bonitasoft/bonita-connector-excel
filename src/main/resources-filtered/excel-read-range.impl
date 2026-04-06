@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<implementation:connectorImplementation xmlns:implementation="http://www.bonitasoft.org/ns/connector/implementation/6.0">
+  <implementationId>${excel-read-range.impl.id}</implementationId>
+  <implementationVersion>${excel-read-range.impl.version}</implementationVersion>
+  <definitionId>${excel-read-range.def.id}</definitionId>
+  <definitionVersion>${excel-read-range.def.version}</definitionVersion>
+  <implementationClassname>${excel-read-range.main-class}</implementationClassname>
+  <hasSources>false</hasSources>
+  <description>Excel Read Range connector implementation</description>
+
+<!-- retrieved from the pom.xml at build time -->
+${connector-dependencies}
+
+</implementation:connectorImplementation>

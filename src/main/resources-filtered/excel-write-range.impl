@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<implementation:connectorImplementation xmlns:implementation="http://www.bonitasoft.org/ns/connector/implementation/6.0">
+  <implementationId>${excel-write-range.impl.id}</implementationId>
+  <implementationVersion>${excel-write-range.impl.version}</implementationVersion>
+  <definitionId>${excel-write-range.def.id}</definitionId>
+  <definitionVersion>${excel-write-range.def.version}</definitionVersion>
+  <implementationClassname>${excel-write-range.main-class}</implementationClassname>
+  <hasSources>false</hasSources>
+  <description>Excel Write Range connector implementation</description>
+
+<!-- retrieved from the pom.xml at build time -->
+${connector-dependencies}
+
+</implementation:connectorImplementation>

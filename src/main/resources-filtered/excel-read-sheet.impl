@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<implementation:connectorImplementation xmlns:implementation="http://www.bonitasoft.org/ns/connector/implementation/6.0">
+  <implementationId>${excel-read-sheet.impl.id}</implementationId>
+  <implementationVersion>${excel-read-sheet.impl.version}</implementationVersion>
+  <definitionId>${excel-read-sheet.def.id}</definitionId>
+  <definitionVersion>${excel-read-sheet.def.version}</definitionVersion>
+  <implementationClassname>${excel-read-sheet.main-class}</implementationClassname>
+  <hasSources>false</hasSources>
+  <description>Excel Read Sheet connector implementation</description>
+
+<!-- retrieved from the pom.xml at build time -->
+${connector-dependencies}
+
+</implementation:connectorImplementation>

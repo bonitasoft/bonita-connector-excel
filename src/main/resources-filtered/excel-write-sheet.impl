@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<implementation:connectorImplementation xmlns:implementation="http://www.bonitasoft.org/ns/connector/implementation/6.0">
+  <implementationId>${excel-write-sheet.impl.id}</implementationId>
+  <implementationVersion>${excel-write-sheet.impl.version}</implementationVersion>
+  <definitionId>${excel-write-sheet.def.id}</definitionId>
+  <definitionVersion>${excel-write-sheet.def.version}</definitionVersion>
+  <implementationClassname>${excel-write-sheet.main-class}</implementationClassname>
+  <hasSources>false</hasSources>
+  <description>Excel Write Sheet connector implementation</description>
+
+<!-- retrieved from the pom.xml at build time -->
+${connector-dependencies}
+
+</implementation:connectorImplementation>
